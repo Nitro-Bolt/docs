@@ -23,7 +23,7 @@ module.exports = {
           position: 'right'
         },
         {
-          href: 'https://github.com/NitroBolt',
+          href: 'https://github.com/Nitro-Bolt',
           label: 'GitHub',
           position: 'right',
         },
