@@ -13,11 +13,6 @@ module.exports = {
       title: 'NitroBolt Documentation',
       items: [
         {
-          href: '/packager/',
-          label: 'Packager',
-          position: 'left'
-        },
-        {
           href: '/development/',
           label: 'Development',
           position: 'left'
