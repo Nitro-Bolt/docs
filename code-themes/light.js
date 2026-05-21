@@ -53,7 +53,7 @@ module.exports = {
       }
     },
     {
-      types: ['attr-name'],
+      types: ['attr-name', 'property'],
       style: {
         color: '#e50000'
       }

@@ -35,6 +35,7 @@ module.exports = {
     prism: {
       theme: require('./code-themes/light'),
       darkTheme: require('./code-themes/dark'),
+      additionalLanguages: ['json']
     },
   },
   presets: [
