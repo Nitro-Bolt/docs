@@ -43,3 +43,10 @@ Next, create a `userscript.js` file inside of the zip. This will contain the cod
 // This will be run when the addon is loaded
 console.log("Hello world!");
 ```
+
+<details>
+<summary>If you're used to developing Scratch Addons</summary>
+
+Unlike regular addons, custom addons do not need an export statement. Simply put the code you want to run in the top-level of the file.
+
+</details>

@@ -11,12 +11,12 @@ Because NitroBolt is under active development, many APIs may change and potentia
 
 ## Traps
 ```js
-addon.traps.vm; // The current VM instance
-addon.traps.redux; // The current ReduxStore
+addon.tab.traps.vm; // The current VM instance
+addon.tab.traps.redux; // The current ReduxStore
 
-await addon.traps.getBlockly(); // Returns the current Blockly instance
-await addon.traps.getWorkspace(); // Returns the current Blockly workspace
-await addon.traps.getPaper(); // Returns the current paper instance, if active.
+await addon.tab.traps.getBlockly(); // Returns the current Blockly instance
+await addon.tab.traps.getWorkspace(); // Returns the current Blockly workspace
+await addon.tab.traps.getPaper(); // Returns the current paper instance, if active.
 ```
 
 ## Settings
@@ -33,23 +33,27 @@ addon.settings.addEventListener('change', () => {
 ## Other
 ```js
 // Addons should take advantage of these
-addon.disabled; // Whether the addon is currently disabled
-addon.onEnabled = () => alert('enabled!'); // Runs when the addon is enabled
-addon.onDisabled = () => alert('disabled!'); // Runs when the addon is disabled
+addon.self.disabled; // Whether the addon is currently disabled
 
-addon.editorDirection; // Either 'ltr' or 'rtl'
-addon.editorMode; // Either 'embed', 'fullscreen', 'projectpage, or 'editor'
+// Runs when the addon is re-enabled
+addon.self.addEventListener('reenabled', () => alert('enabled!'));
+
+// Runs when the addon is disabled
+addon.self.addEventListener('disabled', () => alert('disabled!'));
+
+addon.tab.editorDirection; // Either 'ltr' or 'rtl'
+addon.tab.editorMode; // Either 'embed', 'fullscreen', 'projectpage, or 'editor'
 
 // Returns a data: URI of a file in the addon if it exists
-addon.getResource('img.png');
+addon.self.getResource('img.png');
 
 // Resolves when an element with a certain selector exists
 // Or resolves instantly if it already exists
-await addon.waitForElement('.myElement');
+await addon.tab.waitForElement('.myElement');
 
 // Modals
 // Note: you can also put HTML for the message
-addon.createModal('Cool title');
-await addon.confirm('Are you cool?');
-await addon.prompt('Enter the password', 'optional default value');
+addon.tab.createModal('Cool title');
+await addon.tab.confirm('Are you cool?');
+await addon.tab.prompt('Enter the password', 'optional default value');
 ```
