@@ -3,6 +3,15 @@ module.exports = {
         'intro',
         {
             type: 'category',
+            label: 'API Reference',
+            collapsed: false,
+            items: [
+                'api/runtime',
+                'api/vm'
+            ]
+        },
+        {
+            type: 'category',
             label: 'Website',
             collapsed: false,
             items: [
