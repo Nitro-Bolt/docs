@@ -12,7 +12,7 @@ Lets you change the cloud variable server that NitroBolt will connect to.
 
 https://nitrobolt.org/12785898?cloud_host=wss://clouddata.turbowarp.org
 
-Inclusion of `ws://` or `wss://` is optional but recommended. Insecure `ws://` servers may not work because TurboWarp uses HTTPS.
+Inclusion of `ws://` or `wss://` is optional but recommended. Insecure `ws://` servers may not work because NitroBolt uses HTTPS.
 
 ## `extension`
 Loads a custom extension from a URL.
