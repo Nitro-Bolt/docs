@@ -5,7 +5,7 @@ slug: /extensions/duplicate-on-drag
 
 import {ExtensionCode} from './utils.js';
 
-The "Duplicate on Drag" is a feature that allows you to create blocks that will duplicate once they are dragged. This is useful for loops and blocks that have temporal variables on them. For example, the `for each (i) in range (1) to (10)` block uses this feature for the `i` block:
+Duplicate on Drag is a feature that allows you to create reporter blocks that will duplicate once they are dragged. This is useful for loops and blocks that have temporal variables on them. For example, the `for each (i) in range (1) to (10)` block uses this feature for the `i` block:
 
 ![for each i in range](./assets/for-each-i-in-range.svg)
 
