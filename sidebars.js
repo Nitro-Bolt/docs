@@ -25,6 +25,14 @@ module.exports = {
         'development/home',
         {
             type: 'category',
+            label: 'Custom Extension APIs',
+            collapsed: false,
+            items: [
+                'development/extensions/duplicate-on-drag',
+            ]
+        },
+        {
+            type: 'category',
             label: 'Custom Addons',
             collapsed: false,
             items: [
