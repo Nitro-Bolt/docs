@@ -43,9 +43,9 @@ switches: ["otherblock", "alsoanotherblock"];
 
 ```js
 switches: [
-  { id: "motion_changexby", inputs: [["X", "DX"]] },
-  { id: "motion_sety", inputs: [["X", "Y"]] },
-  { id: "motion_changeyby", inputs: [["X", "DY"]] }
+  { id: "changexby", inputs: [["X", "DX"]] },
+  { id: "sety", inputs: [["X", "Y"]] },
+  { id: "changeyby", inputs: [["X", "DY"]] }
 ]
 ```
 
@@ -53,8 +53,8 @@ switches: [
 
 ```js
 switches: [
-  { id: "looks_say", splitInputs: ["SECS"] },
-  { id: "looks_think", splitInputs: ["SECS"] }
+  { id: "say", splitInputs: ["SECS"] },
+  { id: "think", splitInputs: ["SECS"] }
 ]
 ```
 
