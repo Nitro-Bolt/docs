@@ -29,6 +29,7 @@ module.exports = {
             collapsed: false,
             items: [
                 'development/extensions/duplicate-on-drag',
+                'development/extensions/switches',
             ]
         },
         {
