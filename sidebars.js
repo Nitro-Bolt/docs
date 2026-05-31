@@ -3,15 +3,6 @@ module.exports = {
         'intro',
         {
             type: 'category',
-            label: 'API Reference',
-            collapsed: false,
-            items: [
-                'api/runtime',
-                'api/vm'
-            ]
-        },
-        {
-            type: 'category',
             label: 'Website',
             collapsed: false,
             items: [
@@ -19,17 +10,14 @@ module.exports = {
                 'website/javascript',
                 'website/url-parameters'
             ]
-        }
-    ],
-    development: [
-        'development/home',
+        },
         {
             type: 'category',
-            label: 'Custom Extension APIs',
+            label: 'Extension APIs',
             collapsed: false,
             items: [
-                'development/extensions/duplicate-on-drag',
-                'development/extensions/switches',
+                'extensions/duplicate-on-drag',
+                'extensions/switches'
             ]
         },
         {
@@ -37,9 +25,9 @@ module.exports = {
             label: 'Custom Addons',
             collapsed: false,
             items: [
-                'development/addons/introduction',
-                'development/addons/getting-started',
-                'development/addons/assorted-apis'
+                'addons/introduction',
+                'addons/getting-started',
+                'addons/assorted-apis'
             ]
         }
     ]

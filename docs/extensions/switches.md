@@ -5,7 +5,7 @@ slug: /extensions/switches
 
 import {ExtensionCode} from './utils.js';
 
-Switches are a quality-of-life feature that lets users quickly swap between related blocks using the block context menu. For example, right-clicking `change x by ()` reveals options like `set x to ()`, `set y to ()`, and `change y by ()`.
+Switches are a quality-of-life feature that let users quickly swap between related blocks using the block context menu. For example, right-clicking `change x by ()` reveals options like `set x to ()`, `set y to ()`, and `change y by ()`.
 
 It's highly recommended to add switches to your extension's blocks where it makes sense. Here's a full example to get you started:
 
