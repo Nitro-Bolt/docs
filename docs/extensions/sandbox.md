@@ -77,7 +77,6 @@ Below is an example of a simple unsandboxed extension.
 
 ### Additional Requirements
 Before we talk about the new APIs, we want to note that with more power comes more responsibility. Here are some additional requirements for unsandboxed extensions:
-- Blocks must not throw errors. While sandboxed extensions could, unsandboxed extensions that do this may break scripts.
 - Input and boolean blocks must return a valid value. While sandboxed extensions are free to neglect this, unsandboxed extensions that don't return proper values (string, number, or boolean) can break scripts in unknown ways.
 - Blocks must not get stuck in infinite loops. While sandboxed extensions will usually not be able to freeze the entire window if they get stuck in a loop, unsandboxed extensions will. This can result in data loss.
 
