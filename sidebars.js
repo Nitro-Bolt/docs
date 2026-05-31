@@ -16,6 +16,7 @@ module.exports = {
             label: 'Extension APIs',
             collapsed: false,
             items: [
+                'extensions/sandbox',
                 'extensions/duplicate-on-drag',
                 'extensions/switches'
             ]
