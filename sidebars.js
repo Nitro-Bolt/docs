@@ -18,7 +18,8 @@ module.exports = {
             items: [
                 'extensions/sandbox',
                 'extensions/duplicate-on-drag',
-                'extensions/switches'
+                'extensions/switches',
+                'extensions/extendables'
             ]
         },
         {
