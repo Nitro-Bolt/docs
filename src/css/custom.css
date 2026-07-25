@@ -13,3 +13,16 @@ h1 {
 .pagination-nav {
   display: none;
 }
+
+.nitrobolt-scratchblocks {
+  margin: 0 0 var(--ifm-leading);
+  overflow-x: auto;
+}
+
+.nitrobolt-scratchblocks > pre {
+  margin: 0;
+}
+
+.nitrobolt-scratchblocks .scratchblocks {
+  min-width: max-content;
+}

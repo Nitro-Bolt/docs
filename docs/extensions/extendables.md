@@ -11,7 +11,12 @@ To use extendables in your extension, you can use the new `Scratch.ArgumentType.
 
 <ExtensionCode title="simple-extendable">{require('!raw-loader!@site/static/example-extensions/simple-extendable.js')}</ExtensionCode>
 
-![simple extendable](./assets/simple-extendable.svg)
+```scratch
+(hello @addInput :: extension)
+```
+```scratch
+(hello [ ] [ ] @delInput @addInput :: extension)
+```
 
 As you can see, there are some new things extendables implement:
 
@@ -22,7 +27,9 @@ As you can see, there are some new things extendables implement:
 
 Since extendables allow normal arguments, they also allow extendables to be inside of them.
 
-![nested extendable](./assets/nested-extendable.png)
+```scratch
+nested layer 1 @addInput [10] | layer 1 layer 2 [5] || layer 2 [5] @delInput @addInput [10] @delInput @addInput :: extension
+```
 
 This is a nested extendable. Let's take a look at an example:
 

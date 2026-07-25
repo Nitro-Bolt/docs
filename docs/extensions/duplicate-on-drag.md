@@ -7,7 +7,11 @@ import {ExtensionCode} from './utils.js';
 
 Duplicate on Drag is a feature that allows you to create reporter blocks that will duplicate once they are dragged. This is useful for loops and blocks that have temporal variables on them. For example, the `for each (i) in range (1) to (10)` block uses this feature for the `i` block:
 
-![for each i in range](./assets/for-each-i-in-range.svg)
+```scratch
+for each (i :: control) in range [1] to [10] :: control c-block
+
+end
+```
 
 Here, the `i` block represents the current number on the loop. If you put a `say (i) for (1) seconds` block inside of it, you can notice that it goes through every number from 1 to 10.
 
