@@ -21,6 +21,19 @@ module.exports = {
                 'extensions/switches',
                 'extensions/branches',
                 'extensions/extendables',
+                {
+                    type: 'category',
+                    label: 'Advanced',
+                    collapsed: true,
+                    items: [
+                        'extensions/advanced/objects-and-arrays',
+                        'extensions/advanced/extra-block-types',
+                        'extensions/advanced/menu-accept-text',
+                        'extensions/advanced/block-metadata',
+                        'extensions/advanced/extension-metadata',
+                        'extensions/advanced/extension-storage'
+                    ]
+                }
             ]
         },
         {
