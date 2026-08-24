@@ -29,6 +29,7 @@ module.exports = {
                         'extensions/advanced/objects-and-arrays',
                         'extensions/advanced/extra-block-types',
                         'extensions/advanced/menu-accept-text',
+                        'extensions/advanced/menu-separators',
                         'extensions/advanced/dependent-dropdowns',
                         'extensions/advanced/slider-inputs',
                         'extensions/advanced/block-metadata',
