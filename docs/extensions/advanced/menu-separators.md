@@ -1,5 +1,5 @@
 ---
-title: Menu separators
+title: Menu Separators
 slug: /extensions/advanced/menu-separators
 ---
 
