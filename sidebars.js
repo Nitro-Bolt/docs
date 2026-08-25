@@ -8,7 +8,8 @@ module.exports = {
             items: [
                 'website/embedding',
                 'website/javascript',
-                'website/url-parameters'
+                'website/url-parameters',
+                'website/packs'
             ]
         },
         {
