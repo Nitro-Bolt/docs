@@ -1,8 +1,8 @@
-class MenuAcceptText {
+class ExtraMenuProperties {
   getInfo() {
     return {
-      id: "menuaccepttextexample",
-      name: "Menu Accept Text",
+      id: "extramenupropertiesexample",
+      name: "Extra Menu Properties",
       blocks: [
         {
           opcode: "choose",
@@ -11,16 +11,20 @@ class MenuAcceptText {
           arguments: {
             COLOR: {
               type: Scratch.ArgumentType.STRING,
-              menu: "COLOR_MENU",
+              menu: "colors",
               defaultValue: "red"
             }
           }
         }
       ],
       menus: {
-        COLOR_MENU: {
+        colors: {
           acceptText: true,
-          items: ["red", "green", "blue"]
+          items: [
+            "red", "green", "blue",
+            "---",
+            "cyan", "magenta", "yellow"
+          ]
         }
       }
     };
@@ -30,4 +34,4 @@ class MenuAcceptText {
     return args.COLOR;
   }
 }
-Scratch.extensions.register(new MenuAcceptText());
+Scratch.extensions.register(new ExtraMenuProperties());
