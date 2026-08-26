@@ -86,7 +86,7 @@ The big thing that unsandboxed extensions can do is directly access NitroBolt in
 const vm = Scratch.vm;
 ```
 
-That's full access to the [VM object](../api/vm.md). There is a lot you can do with this.
+That's full access to the [VM object](https://types.nitrobolt.org/classes/scratch-vm.VM.html). There is a lot you can do with this.
 
 Remember -- every variable declaration must happen inside the IIFE.
 ```js

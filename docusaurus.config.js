@@ -13,6 +13,11 @@ module.exports = {
       title: 'NitroBolt Documentation',
       items: [
         {
+          href: 'https://types.nitrobolt.org/',
+          label: 'Type Reference',
+          position: 'left'
+        },
+        {
           href: 'https://nitrobolt.org/',
           label: 'NitroBolt',
           position: 'right'
