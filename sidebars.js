@@ -18,6 +18,7 @@ module.exports = {
             collapsed: false,
             items: [
                 'extensions/sandbox',
+                'extensions/string-inputs',
                 'extensions/duplicate-on-drag',
                 'extensions/switches',
                 'extensions/branches',

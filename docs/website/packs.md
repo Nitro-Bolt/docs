@@ -11,7 +11,7 @@ NitroBolt downloads the pack when the website is opened. After a successful down
 Extensions listed in the extension picker, including extensions from packs, are loaded unsandboxed. Only add packs and extensions that you trust. See [The Sandbox](../extensions/sandbox.md) for details about unsandboxed extensions.
 :::
 
-## Complete example
+## Format
 
 ```json title="pack.json"
 {
@@ -48,8 +48,7 @@ Extensions listed in the extension picker, including extensions from packs, are 
       "docs": true,
       "samples": [
         "Cool Extension Example"
-      ],
-      "scratchCompatible": false
+      ]
     }
   ]
 }
@@ -91,7 +90,6 @@ Each item in `extensions` supports the following keys:
 | `descriptionTranslations` | No | An object mapping locale codes to translated descriptions. |
 | `docs` | No | When truthy, adds a documentation link by resolving the unmodified `slug` against `information.source`. The `.js` suffix used to load the extension is not added to this URL. |
 | `samples` | No | An array of sample project names. Each name resolves to `samples/<name>.sb3` under `information.source`. |
-| `scratchCompatible` | No | Set to `true` if the extension is compatible with Scratch. Omitted or false values mark it as incompatible with Scratch. |
 
 These are all of the extension metadata keys currently read by NitroBolt's pack loader. Other keys may appear in a gallery's own metadata, but NitroBolt ignores them and they do not need to be copied into `pack.json`.
 
