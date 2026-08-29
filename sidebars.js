@@ -34,7 +34,8 @@ module.exports = {
                         'extensions/advanced/extra-block-types',
                         'extensions/advanced/slider-inputs',
                         'extensions/advanced/block-metadata',
-                        'extensions/advanced/extension-storage'
+                        'extensions/advanced/extension-storage',
+                        'extensions/advanced/compiler'
                     ]
                 }
             ]
