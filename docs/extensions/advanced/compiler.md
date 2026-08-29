@@ -1,6 +1,6 @@
 ---
 title: Compiler
-slug: /extensions/compiler
+slug: /extensions/advanced/compiler
 ---
 
 import {ExtensionCode} from '../utils.js';
