@@ -27,6 +27,19 @@ Values in `args` are JavaScript source strings, not the values themselves. Input
 
 The normal opcode function is still required. NitroBolt uses it when the project is running without the compiler.
 
+### Separate input and stack compilation
+
+Reporter-shaped control blocks can provide separate compiler callbacks for input and stacked use. Set `stack` to `null` to compile stacked use to a no-op:
+
+```js
+compiler: {
+  input: this.compileAsInput,
+  stack: null
+}
+```
+
+An explicit stack callback also prevents NitroBolt from converting a stack-click into a visual report. If `compiler` is a single function, it continues to handle both forms and reporters retain their normal visual-report behavior.
+
 ## Branches
 
 Use `util.compileBranch(branchNumber, isLoop)` to compile a branch into a source string. Branch numbers start at 1.
@@ -40,6 +53,13 @@ return `
 ```
 
 Set `isLoop` to `true` only when the generated code repeatedly runs that branch. This lets blocks inside the branch generate the correct loop behavior.
+
+Use `util.compileFunction(branchNumber, parameters, fallback)` when a branch becomes the body of a generated function. It returns a generator-function expression, compiles return blocks as JavaScript returns, and adds the supplied JavaScript `fallback` expression when the branch reaches its end:
+
+```js
+const fn = util.compileFunction(1, ["value"], '""');
+return `(${fn})`;
+```
 
 ## Utilities
 
@@ -55,6 +75,7 @@ The `util` object contains information and helpers from the JavaScript generator
 | `debug` | Whether compiler debugging is enabled. |
 | `isInHat` | Whether the generator is currently compiling a hat block. |
 | `compileBranch(branchNumber, isLoop)` | Compiles a branch and returns its JavaScript source. Branch numbers start at 1. Set `isLoop` to `true` when the generated code repeatedly runs the branch. |
+| `compileFunction(branchNumber, parameters, fallback)` | Compiles a branch as a generator function. `parameters` contains JavaScript parameter names. `fallback` is a JavaScript source expression returned when the branch reaches its end and defaults to `undefined`. |
 | ⚠️ `_frames` | The generator's stack frames. Unsupported API. |
 | ⚠️ `_currentFrame` | The generator's current stack frame. Unsupported API. |
 | ⚠️ `_source` | The JavaScript source generated so far. Unsupported API. |
