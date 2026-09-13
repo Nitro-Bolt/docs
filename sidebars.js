@@ -30,6 +30,7 @@ module.exports = {
                     items: [
                         'extensions/advanced/extra-menu-properties',
                         'extensions/advanced/dependent-dropdowns',
+                        'extensions/advanced/mutator-dropdowns',
                         'extensions/advanced/objects-and-arrays',
                         'extensions/advanced/extra-block-types',
                         'extensions/advanced/slider-inputs',
