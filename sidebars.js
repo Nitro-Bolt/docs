@@ -1,6 +1,7 @@
 module.exports = {
     sidebar: [
         'intro',
+        'translate',
         {
             type: 'category',
             label: 'Website',
