@@ -17,7 +17,7 @@ Do not submit machine translations as your own work. Automated translations ofte
 
 ## Join the translation team
 
-1. Open the [NitroBolt open-source translator signup](https://app.transifex.com/signup/open-source/?join_org=nitrobolt&join_project=nitrobolt).
+1. Open the [NitroBolt open-source translator signup](https://explore.transifex.com/nitrobolt/nitrobolt/).
 2. Continue with GitHub to create or sign in to your Transifex account using GitHub SSO.
 3. Select the language you want to translate.
 4. Submit your request and wait for it to be accepted.
