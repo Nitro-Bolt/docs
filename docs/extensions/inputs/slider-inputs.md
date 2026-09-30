@@ -1,6 +1,6 @@
 ---
 title: Slider Inputs
-slug: /extensions/advanced/slider-inputs
+slug: /extensions/inputs/slider-inputs
 ---
 
 import {ExtensionCode} from '../utils.js';
