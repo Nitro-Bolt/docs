@@ -15,21 +15,23 @@ class YourClass { /* methods */ }
 Scratch.types.register("typeName", YourClass);
 ```
 
+Custom types are available only to unsandboxed extensions. Register each type before the extension calls `Scratch.extensions.register`, so the type is available when the VM processes `getInfo()`.
+
 ## Requirements
 
-Your class must implement specific static methods and properties to integrate with the runtime:
+Your class can implement the following methods and properties to control how the runtime handles its values:
 
-| Method                            | Required | Description                                                                                                                |
-| --------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `constructor(value)`              | ✓        | Initializes your object from a raw value.                                                                                  |
-| `static cast(value)`              | ✓        | Handles type safety. If the input is already your type, return it; otherwise try converting the value to your custom type. |
-| `toString()`                      | ✓        | Converts your custom type to a string representation.                                                                      |
-| `valueOf()`                       | ✓        | Converts your custom type to a primitive number or string. Used in standard Scratch operations.                            |
-| `toJSON(value)`                   | ✓        | Used for serialization. Converts a custom type to a JSON representation.                                                   |
-| `static fromJSON(value)`          | ✓        | Used for serialization. Converts a JSON representation to a custom type.                                                   |
-| `static get shape()`              |          | The name of the block shape. (e.g., "nbArrow" or Scratch.BlockShape.SQUARE)                                                |
-| `static visualReport(instance)`   |          | Returns a HTML string that will be used when a user clicks on the block.                                                   |
-| `static monitorContent(instance)` |          | Returns a HTML string that will be used in the monitor for the block.                                                      |
+| Method                            | Required | Description                                                                                                                                              |
+| --------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `constructor(value)`              | Yes      | Initializes an object from a raw value. The runtime uses it when `cast` or `fromJSON` is not defined.                                                     |
+| `static cast(value)`              | No       | Converts a block argument to your type. If omitted, the runtime uses `new YourClass(value)`. Return existing instances unchanged when implementing this. |
+| `toString()`                      | No       | Provides a string representation for Scratch operations.                                                                                                 |
+| `valueOf()`                       | No       | Provides a primitive number or string for standard Scratch operations and reporter bubbles.                                                              |
+| `toJSON()`                        | No       | Converts an instance to JSON-compatible data. If omitted, the runtime serializes the instance's enumerable properties.                                   |
+| `static fromJSON(value)`          | No       | Restores an instance from serialized data. If omitted, the runtime uses `new YourClass(value)`.                                                           |
+| `static get shape()`              | No       | Provides a built-in shape such as `Scratch.BlockShape.SQUARE` or the name of a registered custom shape such as `"nbArrow"`.                              |
+| `static visualReport(instance)`   | No       | Returns an HTML string shown when a user clicks the reporter block.                                                                                       |
+| `static monitorContent(instance)` | No       | Returns an HTML string shown in the block's monitor.                                                                                                      |
 
 :::info
 If `visualReport` is defined and `monitorContent` isn't, then `visualReport` will be used for the monitor content, and vice versa.
@@ -43,7 +45,7 @@ Once registered, you can use your custom type string as the type or `outputType`
 {
   opcode: "myBlock",
   blockType: Scratch.BlockType.REPORTER,
-  text: "hello [ARG]"
+  text: "hello [ARG]",
   outputType: "counter", // Your registered type name
   arguments: {
     ARG: { type: "counter" } // Your registered type name

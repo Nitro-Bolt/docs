@@ -14,7 +14,7 @@
       if (halfStraight > 0) steps.push("v", halfStraight * 2);
       steps.push(`l ${w} ${w}`);
     },
-    padding: (wut) => {
+    padding: () => {
       return 25;
     }
   });
@@ -27,7 +27,7 @@
       if (halfStraight > 0) steps.push("v", -halfStraight * 2);
       steps.push(`l ${-w} ${-w}`);
     },
-    padding: (wut) => {
+    padding: () => {
       return 25;
     }
   });
@@ -45,7 +45,7 @@
       if (halfStraight > 0) steps.push("v", halfStraight * 2);
       steps.push(`l ${w} ${w}`);
     },
-    padding: (wut) => {
+    padding: () => {
       return { left: 15, right: 50 };
     }
   });
