@@ -36,7 +36,7 @@ Now that you know the methods needed, we need to create the actual block shape. 
 
 Custom block shapes are created this way: we start from the top-left corner of the block, draw the left "edge", go to the bottom-right corner of the block, then draw the right "edge". You will be only creating the left and right edges.
 
-In this tutorial, we will be using [SvgPathEditor](https://qnn.github.io/svg-path-editor/). Once you are in the editor, click the button with an **X** on it, and insert `m 0 0 l -3 -3 l 3 -3` into the Path input. The result should be something like this:
+In this tutorial, we will be using [SvgPathEditor](https://yqnn.github.io/svg-path-editor/). Once you are in the editor, click the button with an **X** on it, and insert `m 0 0 l -3 -3 l 3 -3` into the Path input. The result should be something like this:
 
 ![SVG Path Editor](/images/custom-shapes-one.png)
 
