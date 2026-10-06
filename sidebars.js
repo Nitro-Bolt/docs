@@ -19,11 +19,22 @@ module.exports = {
             collapsed: false,
             items: [
                 'extensions/sandbox',
-                'extensions/string-inputs',
-                'extensions/duplicate-on-drag',
                 'extensions/switches',
-                'extensions/branches',
-                'extensions/extendables',
+                'extensions/custom-types',
+                'extensions/custom-shapes',
+                {
+                    type: 'category',
+                    label: 'Inputs',
+                    collapsed: true,
+                    items: [
+                        'extensions/inputs/string-inputs',
+                        'extensions/inputs/slider-inputs',
+                        'extensions/inputs/objects-and-arrays',
+                        'extensions/inputs/duplicate-on-drag',
+                        'extensions/inputs/extendables',
+                        'extensions/inputs/branches'
+                    ]
+                },
                 {
                     type: 'category',
                     label: 'Advanced',
@@ -33,9 +44,7 @@ module.exports = {
                         'extensions/advanced/dependent-dropdowns',
                         'extensions/advanced/mutator-dropdowns',
                         'extensions/advanced/dual-blocks',
-                        'extensions/advanced/objects-and-arrays',
                         'extensions/advanced/extra-block-types',
-                        'extensions/advanced/slider-inputs',
                         'extensions/advanced/block-metadata',
                         'extensions/advanced/extension-storage',
                         'extensions/advanced/compiler'

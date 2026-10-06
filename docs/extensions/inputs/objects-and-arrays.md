@@ -1,6 +1,6 @@
 ﻿---
 title: Objects & Arrays
-slug: /extensions/advanced/objects-and-arrays
+slug: /extensions/inputs/objects-and-arrays
 ---
 
 import {ExtensionCode} from '../utils.js';

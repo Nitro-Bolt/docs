@@ -1,9 +1,9 @@
 ---
 title: Extendables
-slug: /extensions/extendables
+slug: /extensions/inputs/extendables
 ---
 
-import {ExtensionCode} from './utils.js';
+import {ExtensionCode} from '../utils.js';
 
 Extendables are special arguments which can have a dynamic amount of inputs. For example, the `join () ()` block is extendable, which means you can join 2 or more stuff at a time, depending on what you need.
 

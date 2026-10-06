@@ -1,9 +1,9 @@
 ---
 title: String Inputs
-slug: /extensions/string-inputs
+slug: /extensions/inputs/string-inputs
 ---
 
-import {ExtensionCode} from './utils.js';
+import {ExtensionCode} from '../utils.js';
 
 String arguments use `Scratch.ArgumentType.STRING`. They can accept reporter blocks, display multiple lines, or behave as a text-only field that cannot be replaced by a reporter.
 

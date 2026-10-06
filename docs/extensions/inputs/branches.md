@@ -1,9 +1,9 @@
 ---
 title: Branches
-slug: /extensions/branches
+slug: /extensions/inputs/branches
 ---
 
-import {ExtensionCode} from './utils.js';
+import {ExtensionCode} from '../utils.js';
 
 Branches allow you to easily create C-shaped blocks like conditionals and loops. For example, a `forever {}` block or a `repeat (10) {}` block.
 
