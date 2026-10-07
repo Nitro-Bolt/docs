@@ -55,4 +55,5 @@ These properties can be used inside of an argument with type extendable.
 | `defaultInputs` | `number` | Defines the default amount of inputs that should be on an extendable.               | `2`     |
 | `minInputs`     | `number` | Defines the minimum amount of inputs that the extendable should be allowed to have. | `1`     |
 | `maxInputs`     | `number` | Defines the maximum amount of inputs that the extendable should be allowed to have. | `10`    |
+| `acceptArray`   | `boolean` | Allows an Array block to replace the extendable until it is removed.                | `false` |
 | `separator`     | `string` | What the label between expendable inputs should have.                               | `", "`  |
