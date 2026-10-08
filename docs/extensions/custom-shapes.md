@@ -57,8 +57,6 @@ In this tutorial, we will be using [SvgPathEditor](https://yqnn.github.io/svg-pa
 
 This path draws a small left-pointing arrow.
 
-Custom block shapes are created this way: we start from the top-left corner of the block, draw the left "edge", go to the bottom-right corner of the block, then draw the right "edge". You will be only creating the left and right edges.
-
 You can clear this out and draw your own edge by adding new lines with the blue **+** button. Start the path at `(0, 0)` and make sure the total vertical distance is the block height. Keep the path inside the block's left side: negative x moves out of the block to the left, and positive x moves into it.
 
 ### Register your shape
