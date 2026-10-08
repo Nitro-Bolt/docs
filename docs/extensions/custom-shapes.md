@@ -25,7 +25,7 @@ The registration object uses the following methods to calculate the visual path 
 | --------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `leftEdge(steps, width, halfStraight)`  | Yes      | Adds SVG path commands for the left edge to `steps`.                                                                              |
 | `rightEdge(steps, width, halfStraight)` | No       | Adds SVG path commands for the right edge. If omitted, a mirrored version of `leftEdge` is used.                                  |
-| `edgeWidth(totalHeight)`                | No       | Returns the edge width for the block's total height. If omitted, scratch-blocks uses half the block height.                       |
+| `edgeWidth(totalHeight)`                | No       | Returns the edge width for the block's total height. If omitted, the default is half the block height.                       |
 | `padding(innerShape)`                   | No       | Returns the space between this shape and an inner shape. It can return one number or an object such as `{ left: 10, right: 20 }`. |
 
 ### The parameters
