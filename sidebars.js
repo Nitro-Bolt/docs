@@ -1,12 +1,12 @@
 module.exports = {
     sidebar: [
         'intro',
-        'translate',
         {
             type: 'category',
             label: 'Website',
             collapsed: false,
             items: [
+                'translate',
                 'website/embedding',
                 'website/javascript',
                 'website/url-parameters'
