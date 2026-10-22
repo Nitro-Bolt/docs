@@ -9,8 +9,7 @@ module.exports = {
             items: [
                 'website/embedding',
                 'website/javascript',
-                'website/url-parameters',
-                'website/packs'
+                'website/url-parameters'
             ]
         },
         {
@@ -20,6 +19,7 @@ module.exports = {
             items: [
                 'extensions/sandbox',
                 'extensions/switches',
+                'extensions/packs',
                 'extensions/custom-types',
                 'extensions/custom-shapes',
                 {

@@ -1,6 +1,6 @@
 ---
 title: Extension Packs
-slug: /website/packs
+slug: /extensions/packs
 ---
 
 Extension packs let you add an entire extension gallery to NitroBolt using one JSON file. Users add the direct URL to your `pack.json` from the **+** button in the extension picker.
