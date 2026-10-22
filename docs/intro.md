@@ -1,8 +1,12 @@
 ---
-title: Intro
+title: Introduction
 slug: /
 ---
 
 # NitroBolt Documentation
 
-Welcome to the NitroBolt documentation! Here, you will find technical information for the Nitrobolt editor, a [TurboWarp](https://turbowarp.org) mod that pushes the limits of what the [Scratch editor](https://scratch.org/create) can do.
+[NitroBolt](https://nitrobolt.org) is a mod of [TurboWarp](https://turbowarp.org) and [Scratch](https://scratch.org/create) with tons of new features, built by a team of dedicated developers who don't want to be restricted by backwards compatibility with Scratch. It's built for game developers interested in advanced block coding.
+
+You can access NitroBolt at https://nitrobolt.org. The source code is available on [GitHub](https://github.com/Nitro-Bolt).
+
+The NitroBolt documentation is [open source](https://github.com/Nitro-Bolt/docs). Contributions are welcome.
