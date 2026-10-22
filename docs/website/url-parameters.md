@@ -17,15 +17,22 @@ Inclusion of `ws://` or `wss://` is optional but recommended. Insecure `ws://` s
 ## `extension`
 Loads a custom extension from a URL.
 
+https://nitrobolt.org/editor?extension=https://docs.nitrobolt.org/example-extensions/switches.js
+
 ## `nocompile`
 Turns the NitroBolt compiler off and uses the slower interpreter.
 
 https://nitrobolt.org/?nocompile
 
+## `project_title`
+Tells NitroBolt what the project name is. Works best when paired with `project_url`.
+
+https://nitrobolt.org/editor?project_title=My+NitroBolt+Project
+
 ## `project_url`
 Tells NitroBolt to download project data from an arbitrary URL.
 
-`https://` is implied if you don't include a protocol. `http://` URLs generally will not work for security reasons. Note that the URL needs to be a direct download and must support CORS (`Access-Control-Allow-Origin: *`). [GitHub Pages](https://pages.github.com) will do this automatically and is known to work well.
+`https://` is implied if you don't include a protocol. `http://` URLs will generally not work for security reasons. Note that the URL needs to be a direct download and must support CORS (`Access-Control-Allow-Origin: *`). [GitHub Pages](https://pages.github.com) will do this automatically and is known to work well.
 
 ## `username`
 Controls the value of the username block. Can be overridden by setting a username in Editor Settings.
